@@ -23,10 +23,8 @@ public class ProcessadorDeArquivos {
         Scanner sc = new Scanner(new File(path));
 
         List<Venda> vendas = new ArrayList<>();
-        int contLinhas = 0;
         while (sc.hasNext()) {
             String linha = sc.nextLine();
-
             String[] campos = linha.split(PONTO_E_VIRGULA);
             /*
                     System.out.println("Codigo: " + campos[0]);
@@ -56,8 +54,6 @@ public class ProcessadorDeArquivos {
 
         }
         sc.close();
-        System.out.println("Total de linhas lidas: " + contLinhas);
-
         return vendas;
     }
 

@@ -31,10 +31,7 @@ public class ProcessadorVendas {
      * @throws java.lang.IllegalArgumentException
      */
     public static void main(String[] args)throws IllegalArgumentException {
-
-     
         try {
-
             ProcessadorDeArquivos processador = new ProcessadorDeArquivos();
             List<Venda> vendas = processador.processar(PATH);
             
