@@ -46,6 +46,11 @@ public class Venda {
     public void setStatus(StatusVenda status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "Venda{" + "codigo=" + codigo + ", produto=" + produto + ", quantidade=" + quantidade + ", status=" + status + '}';
+    }
     
     
     public static VendaBuilder builder(){
