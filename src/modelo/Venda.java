@@ -15,6 +15,12 @@ public class Venda {
     private Integer quantidade;
     private StatusVenda status;
 
+    private Venda() {
+        
+    }
+    
+    
+
     public Integer getCodigo() {
         return codigo;
     }
@@ -51,7 +57,8 @@ public class Venda {
     public String toString() {
         return "Venda{" + "codigo=" + codigo + ", produto=" + produto + ", quantidade=" + quantidade + ", status=" + status + '}';
     }
-    
+
+  
     
     public static VendaBuilder builder(){
         return new VendaBuilder();

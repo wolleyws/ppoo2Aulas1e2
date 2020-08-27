@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import modelo.StatusVenda;
 import modelo.Venda;
 
 /**
@@ -48,6 +49,7 @@ public class ProcessadorDeArquivos {
                     .produto(campos[1])
                     .status(campos[3])
                     .build();
+            
 
             //add na lista
             vendas.add(venda);

@@ -10,6 +10,8 @@ package modelo;
  * @author wolley
  */
 public class Produto {
+    private Integer codigo;
+    private String descricao;
 
     public Produto(Integer codigo) {
         this.codigo = codigo;
@@ -18,7 +20,7 @@ public class Produto {
     public Produto() {
     }
   
-    public static Produto of(String codigoProduto) {
+    public static Produto of (String codigoProduto) {
        return new Produto(Integer.parseInt(codigoProduto));
     }
 
@@ -26,8 +28,7 @@ public class Produto {
        return new Produto(codigo);
     }
     
-    private Integer codigo;
-    private String descricao;
+   
 
     public Integer getCodigo() {
         return codigo;
